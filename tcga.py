@@ -108,7 +108,7 @@ if not match.isna().any().any():
     plt.show()
 
 else:
-    print("Invalid TCGA barcode format.")
+    print("Invalid TCGA barcode.")
 
 # Step 1: Train/Test Split
 from sklearn.model_selection import train_test_split
