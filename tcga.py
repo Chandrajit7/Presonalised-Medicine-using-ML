@@ -67,7 +67,7 @@ def predict_site_with_max_voting(input_barcode):
     most_common_site, count = vote_counts.most_common(1)[0]
 
     return f"Predicted Site (Max Voting): {most_common_site} (Votes: {count})"
-print(predict_site_with_max_voting(user_input))
+print(predict_site_with_max_voting:(user_input))
 
 if not match.isna().any().any():
     center_code = match.iloc[0, 0]
