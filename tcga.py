@@ -67,7 +67,7 @@ def predict_site_with_max_voting(input_barcode):
     most_common_site, count = vote_counts.most_common(1)[0]
 
     return f"Predicted Site (Max Voting): {most_common_site} (Votes: {count})"
-print(predict_site_with_max_voting:(user_input))
+print(predict_site_with_max_voting(user_input))
 
 if not match.isna().any().any():
     center_code = match.iloc[0, 0]
@@ -77,7 +77,7 @@ if not match.isna().any().any():
     if center_code in X.columns:
         input_vector[center_code] = 1
     else:
-        print(f"Unknown center code: {center_code}")
+        print(f"Unknown center code(not in the database please update the DB): {center_code}")
         exit()
 
     # Predict probabilities
